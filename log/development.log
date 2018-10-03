@@ -6994,3 +6994,21 @@ Processing by PostsController#index as HTML
   Rendered posts/_post.html.erb (0.2ms)
   Rendered posts/index.html.erb within layouts/application (26.0ms)
 Completed 200 OK in 42ms (Views: 40.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/posts/new" for 24.46.108.174 at 2018-10-03 18:57:19 +0000
+Cannot render console from 24.46.108.174! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#new as HTML
+  Rendered posts/new.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 21ms (Views: 20.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/posts" for 24.46.108.174 at 2018-10-03 18:57:27 +0000
+Cannot render console from 24.46.108.174! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#create as */*
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"WtHghQ+MJT+Bv6mdlU9Y/YXM8rXIc4bRN6AlFCyzek5JcC2RerDW67Ip2FcXafqU2r+Pd2UNX9mumj4C14p37w==", "post"=>{"title"=>"g1", "description"=>"g1111"}}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "posts" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["title", "g1"], ["description", "g1111"], ["created_at", "2018-10-03 18:57:27.466503"], ["updated_at", "2018-10-03 18:57:27.466503"]]
+  [1m[36m (13.8ms)[0m  [1mcommit transaction[0m
+Redirected to http://67.205.130.239:41410/posts/22
+Completed 200 OK in 37ms (ActiveRecord: 14.2ms)

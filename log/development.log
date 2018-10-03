@@ -6739,3 +6739,35 @@ Cannot render console from 24.46.108.174! Allowed networks: 127.0.0.1, ::1, 127.
   [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
 Processing by PostsController#new as HTML
   Rendered posts/new.html.erb within layouts/application (40.7ms)
+Completed 200 OK in 618ms (Views: 588.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 24.46.108.174 at 2018-10-03 18:51:34 +0000
+Cannot render console from 24.46.108.174! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 24.46.108.174 at 2018-10-03 18:51:34 +0000
+Cannot render console from 24.46.108.174! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 24.46.108.174 at 2018-10-03 18:51:34 +0000
+Cannot render console from 24.46.108.174! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/turbolinks.self-569ee74eaa15c1e2019317ff770b8769b1ec033a0f572a485f64c82ddc8f989e.js?body=1" for 24.46.108.174 at 2018-10-03 18:51:34 +0000
+Cannot render console from 24.46.108.174! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 24.46.108.174 at 2018-10-03 18:51:34 +0000
+Cannot render console from 24.46.108.174! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started POST "/posts" for 24.46.108.174 at 2018-10-03 18:51:42 +0000
+Cannot render console from 24.46.108.174! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#create as */*
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"bM7YVViByQCfuc1AFKHYycUa66J3GydJwd6ZjTubfPx/bxVBLb061KwvvIqWh3qgmmmWYNpl/kFY5IKbwKJxXQ==", "post"=>{"title"=>"t3", "description"=>"g5"}}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "posts" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "t3"], ["description", "g5"], ["created_at", "2018-10-03 18:51:42.479273"], ["updated_at", "2018-10-03 18:51:42.479273"]]
+  [1m[35m (20.2ms)[0m  commit transaction
+Redirected to http://67.205.130.239:41410/posts/15
+Completed 200 OK in 30ms (ActiveRecord: 21.0ms)
